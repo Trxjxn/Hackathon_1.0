@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgColor: #252529;
+    --textColor: #fff;
+}
+
+body {
+    line-height: 1.6;
+    background-color: var(--bgColor);
+    font-family: 'PT sans', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #555;
+}
+
+.small_width {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.small_width a {
+    color: var(--textColor);
+    text-decoration: none;
+    text-indent: 25px;
+}
+
+.navbar ul {
+    display: none;
+}
+
+
+/* overview */
+.overview {
+    background-image: url(./images/showcase.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    width: 100%;
+    height: 50vh;
+    color: var(--textColor);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview_text h1 {
+    margin: 10px;
+    font-size: 4rem;
+
+}
+
+.overview_text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.overview_text p {
+    display: none;
+}
+
+/* Music */
+.music {
+    color: var(--textColor);
+    background-color: var(--bgColor);
+    width: 100%;
+    text-align: center;
+    padding: 0 3rem;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+.music_heading {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.music_heading i {
+    margin-right: 10px;
+}
+
+.music h3 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.desc {
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #b90415;
+    display: inline-block;
+    padding: 1rem;
+    color: var(--textColor);
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.btn:hover {
+    background-color: #d3071b;
+}
+
+.availability {
+    color: #f4f4f4;
+    margin: 1rem 0;
+    font-size: 16px;
+}
+
+.music img {
+    width: 100%;
+}
+
+/* video */
+.video {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 3rem;
+    text-align: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    height: fit-content;
+}
+
+.vid_heading {
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.video p {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 1rem 0;
+}
+
+.read_more_btn {
+    background-color: #103063;
+    padding: 1rem;
+    color: #fff;
+    display: inline-block;
+    align-self: center;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.read_more_btn:hover {
+    background-color: #143f85;
+}
+
+.video img {
+    width: 100%;
+}
+
+/* entertainment */
+.entertainment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background: url(./images/section-bg.jpeg) no-repeat bottom/cover;
+    height: fit-content;
+    padding: 10rem 0;
+    color: var(--textColor);
+}
+
+.entertainment_heading {
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: bold;
+}
+
+.entertainment p {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+/* Gift cards */
+.gift_cards {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    padding: 2rem 3rem;
+    text-align: left;
+    justify-content: center;
+}
+
+.gift_cards img {
+    width: 100%;
+}
+
+.gift_cards_heading {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #333;
+}
+
+.gift_cards p {
+    color: #333;
+    margin: 1rem 0;
+}
+
+.gift_cards hr {
+    border-width: 1px;
+    margin-bottom: 10px;
+    border-style: inset;
+}
+
+.gift_cards a {
+    text-decoration: none;
+    color: #103063;
+}
+
+/* footer */
+.footer_cols {
+    display: none;
+}
+
+.footer_end {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    color: var(--textColor);
+}
+
+@media (min-width: 675px) {
+
+    /* navbar */
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: var(--textColor);
+    }
+
+    .navbar ul li {
+        margin: 0 20px;
+    }
+
+    .navbar ul li:hover {
+        background-color: #555;
+    }
+
+    .small_width {
+        display: none;
+    }
+
+    /* overview */
+    .overview {
+        height: 100vh;
+    }
+
+    .overview_text p {
+        display: block;
+        font-size: 1.3rem;
+        text-align: center;
+        width: 100vh;
+    }
+
+    /* music */
+    .music img {
+        width: 70%;
+    }
+
+    /* video */
+    .video img {
+        width: 70%;
+        align-self: center;
+    }
+
+    /* entertainment */
+    .entertainment p {
+        width: 100vh;
+        text-align: center;
+        align-self: center;
+    }
+
+
+    /* gift cards */
+    .gift_cards {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .gift_cards img {
+        width: 40%;
+    }
+
+    /* footer */
+    .footer_cols {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        color: #fff;
+        margin: 20px;
+    }
+
+    .footer_cols ul {
+        list-style: none;
+    }
+
+    .footer_cols li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: small;
+    }
+
+    .col_head {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        border-bottom: 1px solid #444;
+        width: 100%;
+    }
+}
